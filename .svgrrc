@@ -1,0 +1,19 @@
+{
+  "typescript": true,
+  "icon": true,
+  "expandProps": "end",
+  "svgoConfig": {
+    "plugins": [
+      {
+        "name": "removeAttrs",
+        "params": {
+          "attrs": ["inkscape:*", "sodipodi:*", "enable-background", "style", "xmlns:svg", "xmlns:inkscape", "xmlns:sodipodi", "xmlns:rdf", "xmlns:cc", "xmlns:dc"]
+        }
+      },
+      "removeMetadata",
+      "removeEditorsNSData",
+      "removeStyleElement",
+      "removeScriptElement"
+    ]
+  }
+}

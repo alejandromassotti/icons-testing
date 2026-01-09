@@ -1,0 +1,26 @@
+{
+  "name": "@trc/ui-icons",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "copy-icons": "get-icons.bat && powershell -Command \"Remove-Item 'svgs\\*Org*Parent*.svg','svgs\\*Wiki*.svg' -ErrorAction SilentlyContinue\"",
+    "clean": "rimraf dist src",
+    "icons": "svgr --out-dir src svgs --typescript",
+    "generate-index": "node generate-index.mjs",
+    "build": "npm run copy-icons && npm run clean && npm run icons && npm run generate-index && tsc"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^8.1.0",
+    "@types/react": "^19.2.7",
+    "react": "^19.2.3",
+    "rimraf": "^6.1.2",
+    "typescript": "^5.9.3"
+  }
+}
