@@ -6,11 +6,15 @@ const SvgAcquisitionClassification = (props: SVGProps<SVGSVGElement>) => (
     data-name="Layer 4"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 16 16"
-    width="1em"
-    height="1em"
     {...props}
   >
-    <defs />
+    <defs>
+      <style>
+        {
+          ".cls-1 {\n        fill: #b08abe;\n      }\n\n      .cls-2 {\n        fill: #fff;\n      }"
+        }
+      </style>
+    </defs>
     <rect className="cls-1" x={7.19} y={1.14} width={8.74} height={8.74} />
     <rect className="cls-2" x={8.03} y={1.99} width={7.05} height={7.05} />
     <circle className="cls-1" cx={4.57} cy={7.46} r={4.49} />

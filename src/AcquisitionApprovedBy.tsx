@@ -7,11 +7,14 @@ const SvgAcquisitionApprovedBy = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 16 16"
-    width="1em"
-    height="1em"
     {...props}
   >
     <defs>
+      <style>
+        {
+          ".cls-1 {\n        fill: #b08abe;\n      }\n\n      .cls-2 {\n        fill: #3f3f3f;\n      }\n\n      .cls-3 {\n        fill: #fff;\n      }\n\n      .cls-4 {\n        fill: none;\n      }\n\n      .cls-5 {\n        clip-path: url(#clippath);\n      }"
+        }
+      </style>
       <clipPath id="clippath">
         <rect className="cls-4" x={6.88} y={1.56} width={16} height={16} />
       </clipPath>

@@ -6,11 +6,15 @@ const SvgAcquisitionDate = (props: SVGProps<SVGSVGElement>) => (
     data-name="Layer 11"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 16 16"
-    width="1em"
-    height="1em"
     {...props}
   >
-    <defs />
+    <defs>
+      <style>
+        {
+          ".cls-1 {\n        fill: #b08abe;\n      }\n\n      .cls-2 {\n        fill: #3f3f3f;\n      }"
+        }
+      </style>
+    </defs>
     <path
       className="cls-2"
       d="M16,1.5v14H0V1.5h3V.5h1v1h8V.5h1v1h3ZM1,2.5v2h14v-2h-2v1h-1v-1h-8v1h-1v-1h-2ZM15,14.5V5.5H1v9h14Z"

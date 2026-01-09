@@ -6,11 +6,11 @@ const SvgAcquisitionAcquisitionTrigger = (props: SVGProps<SVGSVGElement>) => (
     data-name="Layer 3"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 16 16"
-    width="1em"
-    height="1em"
     {...props}
   >
-    <defs />
+    <defs>
+      <style>{".cls-1 {\n        fill: #9d6eaf;\n      }"}</style>
+    </defs>
     <polygon
       className="cls-1"
       points="7.03 .53 2.61 9.47 5.91 9.47 3.1 15.53 4.22 15.53 13.33 6.47 8.2 6.55 11.47 .53 7.03 .53"
